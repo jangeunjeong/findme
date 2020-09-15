@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+@font-face { 
+  font-family: 'Cafe24Dangdanghae'; 
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.2/Cafe24Dangdanghae.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+@font-face { 
+  font-family: 'MapoFlowerIsland'; 
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100');
+@font-face { font-family: 'MapoMaponaru'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoMaponaruA.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'ON-IGothic'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eleven@1.0/ON-IGothic.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'MapoPeacefull'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoPeacefullA.woff') format('woff'); font-weight: normal; font-style: normal; }
+*, *::before, *::after {
+  font-family: 'ON-IGothic', 'Noto Sans KR', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+
+  margin: 0;
+  padding: 0; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: black !important;
+}
+.signup {
+  background-color: rgb(4, 12, 102);
+  width: 100vw;
+  height: 100vh;
+}
+.signup .container {
+  max-width: 80%;
+}
+
+/* @media only screen and (min-width: 600px) { */
+  .signup .container.fill-height > .row {
+    max-width: 700px;
+    text-align: center;
+  }
+/* } */
+
+.signup .row, .form .row {
+  /* background-image: linear-gradient(130deg, #fff 10%, #292381 99%); */
+  padding: 20px;
+  border-radius: 10px;
+  /* border-radius: 0px 150px 0px 150px; */
+  /* border: 1px solid #999; */
+  border-top: #fff;
+  /* box-shadow: 5px 5px rgb(205, 204, 228); */
+}
+.form-header {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+.form-hr {
+ border-top: 3px solid #0e1670;
+}
+.btnParent .v-btn {
+  border-radius: 100px;
+  padding: 10px 0;
+}
+.btnParent .v-btn:before {
+  border-radius: 100px;
+  opacity: 0;
+}
+.btnParent .v-btn:hover:before {
+  background-color: #0f0d6d;
+  opacity: 1 !important;
+  transition: opacity 0.4s;
+}
+.btnParent .v-btn.errBtn:hover:before {
+  background-color: rgb(107, 0, 0);
+}
+.btnParent .v-btn:hover .v-btn__content {
+  color: #fff;
+  /* font-weight: bold; */
+}
+.btnParent .v-btn .v-btn__content {
+  font-size: 0.8rem;
+}
